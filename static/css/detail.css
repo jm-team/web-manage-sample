@@ -1,0 +1,104 @@
+html,body{
+    font-size: 12px;
+}
+i,em{
+    font-size: 12px;
+}
+input[type="text"]{
+    line-height: 26px;
+    padding: 0px 8px;
+    border: 1px solid #DADADA;
+    background: #FFFFFF;
+}
+input[type=radio],input[type=checkbox]{
+    vertical-align: text-bottom;
+}
+select{
+    line-height: 26px;
+    vertical-align: middle;
+    height: 28px;
+}
+
+.t-wrapper{
+
+}
+.t-footer{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 32px;
+}
+.t-content{
+    padding: 18px 30px;
+}
+.t-content table.content{
+    min-width: 800px;
+    max-width: 920px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.t-content td{
+    padding: 3px;
+    border: solid 1px #F1F1F1;
+}
+.t-content td[colspan='2']{
+    width: 270px;
+}
+.t-content td.t-label,
+.t-content td.t-label-x{
+    width: 125px;    
+    color: #666;
+    line-height: 26px;
+    text-align: right;
+    font-weight: bold; 
+}
+.t-content td i{
+    margin: 0 2px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+}
+.t-content td.t-label i{
+    color: red;
+    font-family: simsun;
+}
+.t-content td.t-label-x{
+    vertical-align: top;
+}
+.t-content td label{
+    min-width: 50px;
+    font-weight: normal;
+    padding-right: 0.3em;
+    line-height: 1.8em;
+    margin: 0;
+}
+.t-content input[type=text],
+.t-content select{
+    width: 93%;
+}
+.t-content select.units{
+    width: auto;
+}
+.t-content input.ipt-full{
+    width: 100%;
+}
+.t-content input.ipt-among1{
+    width: 117px;
+}
+.t-content input.ipt-among2{
+    width: 70%;
+}
+.t-content textarea{
+    width: 100%;
+    min-height: 57px;
+    resize: none;
+}
+
+/** for select2 **/
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border-color: #DADADA;
+}
+.select2-dropdown{
+    border-color: #DADADA;
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/** button **/
+.btn-blue {
+    background-color: #4497ed !important;
+    color: #fff !important;
+    border-color: #4497ed !important
+}
+
+.btn-green {
+    background-color: #33c16f !important;
+    color: #fff !important;
+    border-color: #33c16f !important
+}
+
+.btn-yellow {
+    background-color: #ff804e !important;
+    color: #fff !important;
+    border-color: #ff804e !important
+}
+
+.btn-black {
+    background-color: #2f323b !important;
+    color: #fff !important;
+    border-color: #2f323b !important
+}
+
+.btn-gray {
+    background-color: #c9c9c9 !important;
+    color: #fff !important;
+    border-color: #c9c9c9 !important
+}
