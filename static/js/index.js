@@ -1,4 +1,13 @@
 $(function(){
+	$(".nav-menu li").on("click",function(){
+		var url;
+		$(this).addClass("active").siblings().removeClass("active");
+		if(url=$(this).data("href")){
+			$.get(url,function(html){
+				$('#content').html(html);
+			});
+		}
+	});
 	$(".btn-detail1").click(function(){
 		layer.open({
 			type: 2,
