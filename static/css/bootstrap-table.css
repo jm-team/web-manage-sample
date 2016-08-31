@@ -1,0 +1,39 @@
+.bootstrap-table{
+    font-size: 12px;
+}
+.bootstrap-table .table thead th .th-inner{
+    padding: 3px 5px;
+    line-height: 24px;
+}
+.bootstrap-table .table .bs-checkbox .th-inner{
+    padding: 3px;
+    line-height: 0;
+}
+.bootstrap-table .table th{
+    font-weight: bold;
+    background-color: #ddd;
+    /*border-left: 1px solid #fff;*/
+}
+.bootstrap-table .table thead tr th,
+.bootstrap-table .table tbody tr td{
+    vertical-align: middle;
+    /*border-left: 1px solid #fff;*/
+    border-color: white;
+}
+.bootstrap-table .table tbody tr:nth-of-type(even) {
+    background-color: #efefef;
+}
+.bootstrap-table .fixed-table-pagination .pagination-info{
+    line-height: 24px;
+}
+
+/* button */
+.bootstrap-table .table tbody tr td .btn{
+    width: 24px;
+    height: 24px;
+    margin: 0px 3px;
+    background: url("../icons/btn-icons.png") no-repeat;
+}
+.bootstrap-table .table .btn.btnDetail{
+    background-position: 0 0;
+}

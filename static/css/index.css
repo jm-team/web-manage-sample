@@ -14,11 +14,12 @@ html,body{
 	height: 70px;
 	margin-top: -70px;
 	background-color: #EDEDED;
+	border-bottom: solid 3px transparent;
 }
 #header .site-logo{
 	display: inline-block;
 	width: 300px;
-	margin-top: 11px;
+	margin-top: 10px;
 	margin-left: 25px;
 }
 #header .site-logo .logo{
@@ -61,8 +62,9 @@ html,body{
 #content{
 	height: 100%;
 	margin-left: 196px;
-	padding: 10px;
+	padding: 15px;
 	background-color: white;
+	overflow: auto;
 }
 
 

@@ -1,1 +1,86 @@
-<a class="btn-detail1" href="javascript:void(0)">公司详情</a><br>
+
+<div class="content">
+	<div class="top-bar">
+		<ul class="nav nav-tabs">
+            <li data-value="" class="active"><a href="#" data-toggle="tab">全部</a></li>
+            <li data-value="0"><a href="#" data-toggle="tab">审核中</a></li>
+            <li data-value="1"><a href="#" data-toggle="tab">审核通过</a></li>
+            <li data-value="2"><a href="#" data-toggle="tab">审核不通过</a></li>
+            <li data-value="3"><a href="#" data-toggle="tab">待审核</a></li>
+        </ul>
+        <ul class="toolbar">
+        	<li><button type="button" class="btn btn-blue btnNew">新增</button></li>
+        	<li><button type="button" class="btn btn-blue btnExportIn">导入</button></li>
+        </ul>
+	</div>
+	<div class="ext-content">
+		<div class="search-bar">
+			<form>
+			<div class="row">
+		        <div class="col-lg-2">
+		            <div class="input-group">
+		                <span class="input-group-addon">公司名称</span>
+		                <input type="text" name="companyName" class="form-control" aria-label="Text input with checkbox">
+		            </div>
+		        </div>
+		        <div class="col-lg-4">
+		            <div class="input-group time-picker">
+		            	<span class="input-group-addon">创建时间</span>
+		            	<input type="text" class="form-control wl-date" aria-label="Amount (to the nearest dollar)"  name="startDate" id="startDate" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'endDate\',{d:-3});}'})">
+		            	<span class="input-group-addon">-</span>
+		            	<input type="text" class="form-control wl-date" aria-label="Amount (to the nearest dollar)"  name="endDate" id="endDate" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startDate\',{d:3});}'})">
+		            </div>
+		        </div>
+		        <div class="col-lg-2">
+		            <div class="input-group">
+		            	<span class="input-group-addon">积分排序</span>
+		            	<select class="search-param form-control selectpicker" name="scoreSort" id="scoreSort">
+		                    <option value="">请选择</option>
+		                    <option value="asc">升序</option>
+		                    <option value="desc">降序</option>
+		                </select>
+		            </div>
+		        </div>	
+		        <div class="col-lg-1"><input type="button" class="btn btn-search" value="查询"></div>	        
+		    </div>
+		    <div class="row">
+		        <div class="col-lg-2">
+		            <div class="input-group">
+		            	<span class="input-group-addon">企业级别</span>
+		            	<select class="search-param form-control selectpicker" name="gradeName" id="gradeName">
+		                    <option value="">请选择</option>
+		                    <option value="一级">一级</option>
+		                    <option value="二级">二级</option>
+		                    <option value="三级">三级</option>
+		                    <option value="四级">四级</option>
+		                </select>
+		            </div>
+		        </div>
+		        
+		        <div class="col-lg-2">
+		            <div class="input-group">
+		            <span class="input-group-addon">账号状态</span>
+		            	<select class="search-param form-control selectpicker" name="status" id="status">
+		                    <option value="">请选择</option>
+		                    <option value="0">正常</option>
+		                    <option value="1">暂停交易</option>
+		                </select>
+		            </div>
+		        </div>
+		        
+		        <div class="col-lg-2">
+		             <div class="input-group">
+		                 <span class="input-group-addon">联系人</span>
+		                 <input type="text" name="linkMan" class="form-control" aria-label="Text input with checkbox">
+		             </div>
+		        </div>
+		        
+	        </div>
+			</form>
+		</div>
+	</div>
+	<div class="table-content">
+    	<table class="table table-striped"></table>    
+    </div> 
+</div>
+<script src="static/html/company/list.js"></script>

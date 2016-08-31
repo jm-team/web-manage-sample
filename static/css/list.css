@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import	url(bootstrap-table.css);
+/*
+.bootstrap-table,
+.fixed-table-container,
+.fixed-table-body{
+	display: inline-block;
+	min-width: 100%;
+}
+*/
+.bootstrap-table .fixed-table-body{
+	overflow-x: auto;
+}
+.bootstrap-table .table{
+    min-width: 100%;
+}
+.top-bar{
+	/*margin-top: 15px;*/
+	margin-bottom:10px;
+	min-height: 42px;
+	border-bottom: solid 2px darkgray ;	
+}
+.nav-tabs{
+	float: left;
+	margin-top: 4px;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.nav-tabs li{
+	float: left;
+	font-size: 14px;
+	color: #2f4050;
+	padding-bottom:2px;
+}
+.nav-tabs li a{
+	padding: 7px 16px;
+	display: inline-block;
+	border-color: transparent;
+}
+.nav-tabs li a:hover{
+	border-bottom: #eee;
+}
+.nav-tabs li.active{
+	
+}
+.nav-tabs li.active a,
+.nav-tabs li.active a:link,
+.nav-tabs li.active a:visited{
+	color: white;
+	background-color: darkgray ;
+	border-color: transparent;
+}
+.toolbar{
+	float: right;
+	margin: 0 15px;
+}
+.toolbar li{
+	float: left;
+	margin: 2px 5px;
+}
+.toolbar li button{
+	padding: 5px 12px;
+}
+
+/**********/
+
+.btn-search,.btn-search:active{
+	padding: 6px 12px 6px 35px;
+    background: #deeefd url(../img/icons-bg.png) 10px -47px;
+    border: 1px solid #81c0fe;
+}
+
+/**********/
+
+.table-content{
+	margin-top: 12px;
+}
+.ext-content{
+	/*padding-bottom: 10px;*/
+}
+.ext-content .row>div{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.ext-content .row div.col-lg-2{
+	min-width: 235px;
+}
+.ext-content .row div.col-lg-4{
+	min-width: 470px;
+}
