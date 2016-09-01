@@ -23,27 +23,6 @@
 		                <input type="text" name="companyName" class="form-control" aria-label="Text input with checkbox">
 		            </div>
 		        </div>
-		        <div class="col-lg-4">
-		            <div class="input-group time-picker">
-		            	<span class="input-group-addon">创建时间</span>
-		            	<input type="text" class="form-control wl-date" aria-label="Amount (to the nearest dollar)"  name="startDate" id="startDate" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'endDate\',{d:-3});}'})">
-		            	<span class="input-group-addon">-</span>
-		            	<input type="text" class="form-control wl-date" aria-label="Amount (to the nearest dollar)"  name="endDate" id="endDate" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startDate\',{d:3});}'})">
-		            </div>
-		        </div>
-		        <div class="col-lg-2">
-		            <div class="input-group">
-		            	<span class="input-group-addon">积分排序</span>
-		            	<select class="search-param form-control selectpicker" name="scoreSort" id="scoreSort">
-		                    <option value="">请选择</option>
-		                    <option value="asc">升序</option>
-		                    <option value="desc">降序</option>
-		                </select>
-		            </div>
-		        </div>	
-		        <div class="col-lg-1"><input type="button" class="btn btn-search" value="查询"></div>	        
-		    </div>
-		    <div class="row">
 		        <div class="col-lg-2">
 		            <div class="input-group">
 		            	<span class="input-group-addon">企业级别</span>
@@ -55,8 +34,28 @@
 		                    <option value="四级">四级</option>
 		                </select>
 		            </div>
+		        </div>		        
+		        <div class="col-lg-3">
+		            <div class="input-group time-picker">
+		            	<span class="input-group-addon">创建时间</span>
+		            	<input type="text" class="form-control wl-date" aria-label="Amount (to the nearest dollar)"  name="startDate" id="startDate" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'endDate\',{d:-3});}'})">
+		            	<span class="input-group-addon">-</span>
+		            	<input type="text" class="form-control wl-date" aria-label="Amount (to the nearest dollar)"  name="endDate" id="endDate" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startDate\',{d:3});}'})">
+		            </div>
 		        </div>
-		        
+		        <div class="col-lg-1"><input type="button" class="btn btn-search" value="查询"></div>	        
+		    </div>
+		    <div class="row">
+		        <div class="col-lg-2">
+		            <div class="input-group">
+		            	<span class="input-group-addon">积分排序</span>
+		            	<select class="search-param form-control selectpicker" name="scoreSort" id="scoreSort">
+		                    <option value="">请选择</option>
+		                    <option value="asc">升序</option>
+		                    <option value="desc">降序</option>
+		                </select>
+		            </div>
+		        </div>	
 		        <div class="col-lg-2">
 		            <div class="input-group">
 		            <span class="input-group-addon">账号状态</span>

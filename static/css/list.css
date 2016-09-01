@@ -17,7 +17,7 @@
 .top-bar{
 	/*margin-top: 15px;*/
 	margin-bottom:10px;
-	min-height: 42px;
+	min-height: 40px;
 	border-bottom: solid 2px darkgray ;	
 }
 .nav-tabs{
@@ -33,7 +33,7 @@
 	padding-bottom:2px;
 }
 .nav-tabs li a{
-	padding: 7px 16px;
+	padding: 6px 16px;
 	display: inline-block;
 	border-color: transparent;
 }
@@ -84,6 +84,9 @@
 }
 .ext-content .row div.col-lg-2{
 	min-width: 235px;
+}
+.ext-content .row div.col-lg-3{
+	min-width: 353px;
 }
 .ext-content .row div.col-lg-4{
 	min-width: 470px;
