@@ -163,9 +163,9 @@ $(function () {
 			area:['935px','650px']
 		});
 	});
-	$(".btnExportIn").click(function(){
+	$(".btnImport").click(function(){
 		var timestamp = (new Date()).valueOf();
-		var url="html/company/import.html?t="+timestamp;
+		var url="html/company/import.php?t="+timestamp;
 		layer.open({
 			type: 2,
 			title: "导入",
