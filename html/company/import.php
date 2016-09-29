@@ -49,10 +49,7 @@ input[name='filePath'][type='text']{
     border-radius: 3px;
 }
 .t-layer .percent {
-    position: absolute;
-    display: inline-block;
-    top: 3px;
-    left: 48%;
+    text-align: center;
 }
 .t-layer .status{
     font-size: 14px;
@@ -86,61 +83,12 @@ input[name='filePath'][type='text']{
     <div class="uploadingProgress">
         <div class="status">正在导入数据...</div>
         <div class="progress">
-            <div class="bar"></div>
-            <div class="percent">0%</div>
+            <div class="bar"><div class="percent">0%</div></div>
+            
         </div>
     </div> 
 </div>
 <script type="text/javascript" src="/static/html/common/common.js"></script>
-<script>
-$(function(){
-    $("form").validate({
-        onfocusout: false,
-        onclick: false,
-        onkeyup: false,
-        ignore: "",
-        showErrors: function(errorMap,errorList){           
-            if(errorList.length){
-                layer.alert(errorList[0].message,function(index){
-                    layer.close(index);
-                    $(errorList[0].element).focus();
-                });
-            }
-        },
-        submitHandler: function(form){
-            $(form).ajaxSubmit({
-                error: function(request) {
-                    layer.alert("超时或系统异常");
-                },
-                success: function(res) {
-                    if(res && res.statusCode == 200){
-                        layer.msg(res.message||"导入数据成功！", {
-                            time: 1500
-                        }, function(){
-                            closeLayer(); 
-                        });
-                    }else{
-                        layer.alert(res&&res.message||"操作失败");
-                    }
-                }
-            });
-            return false;
-        }
-    });    
-    $(".btnSelectFile").click(function(){
-        $("input[name='file']").trigger("click");
-    });
-    $("input[name='file']").on("change",function(){
-        $("input[name='filePath']").val($(this).val());
-    });
-    $(".btnCancel").click(function(){
-        closeLayer();
-    });
-});
-window.closeLayer=function(){
-    var index = parent.layer.getFrameIndex(window.name);
-    parent.layer.close(index);
-}
-</script>
+<script type="text/javascript" src="/static/html/company/import.js"></script>
 </body>
 </html>
